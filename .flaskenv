@@ -1,0 +1,2 @@
+FLASK_APP=tahech.py
+FLASK_ENV=development
