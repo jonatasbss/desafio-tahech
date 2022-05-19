@@ -1,14 +1,53 @@
 * {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
 }
-#footer{
-  font-family: SansSerif;
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 122, 255, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
-h1{
-  text-transform: uppercase;
-  font-family: SansSerif;
+
+#footer {
+    font-family: SansSerif;
+    color: #ffffff;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: SansSerif;
+    padding: 20px;
+}
+
+
+.p-3 {
+    border-radius: 10px;
+    background-color: #007aff;
+    color: #fff;
+    font-family: "Arial Black";
+}
+
+.px-5 {
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+}
+
+.px-5 .modalidade {
+    padding: 20px;
+    height: 800px;
+}
+
+.px-5 .evolucao {
+    padding: 20px;
+    height: 1000px;
+}
+
+.px-5 .licitacao {
+    padding: 20px;
+    height: 750px;
 }

@@ -1,16 +1,52 @@
 {% extends 'base.html' %}
-{% block title %}Tahech Advogados{% endblock %}
+{% block title %}Tahech Advogados | Licitações{% endblock %}
 
 {% block content %}
     <h1> Dados de Licitações de 2022 </h1>
 
-
-
     <div class="container">
         <div class="jumbotron">
-            <h1>Here's your content</h1>
-            <p>This is the index page</p>
+
+            <div class="container px-4">
+                <div class="row gx-5">
+                    <div class="col">
+                        <div class="p-3">
+                            <span>Quantidade de licitações com contratação no ano</span>
+                            <strong><span>{{ quantidade }}</span></strong>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3">
+                            <span>VALOR TOTAL DAS CONTRATAÇÕES POR MEIO DE LICITAÇÃO, DISPENSA OU INEXIBILIDADE NO ANO</span>
+                            <br>
+                            <strong><span> {{ valor }}</span></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container px-5">
+                <div class="modalidade">
+                    <iframe src="https://www.portaltransparencia.gov.br/graficos/embed/licitacoes/visao-geral-por-modalidade-licitacao/treemap?ano=2022&titulo=Vis%C3%A3o%20geral%20das%20contrata%C3%A7%C3%B5es%20-%20Forma%20de%20Contrata%C3%A7%C3%A3o"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div class="evolucao">
+                    <iframe src="https://portaldatransparencia.cgu.gov.br/graficos/embed/coronavirus/evolucao-historica/linhas?ano=2021&titulo=Evolu%C3%A7%C3%A3o%20hist%C3%B3rica"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div class="licitacao">
+                    <iframe src="https://www.portaltransparencia.gov.br/graficos/embed/visualizacaoGraficaTabela/donut/pizza?titulo=Quantidade%20de%20licita%C3%A7%C3%B5es%20por%20Modalidade%20da%20Licita%C3%A7%C3%A3o&funcionalidade=%2Flicitacoes%2Fconsulta&colunaOrdenacao=quantidade&colunasSelecionadas=modalidade%2Cquantidade&de=01%2F01%2F2022&ate=31%2F12%2F2022&modalidade=3600001"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+
         </div>
+
+
     </div>
 
 {% endblock content %}
