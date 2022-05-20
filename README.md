@@ -1,7 +1,5 @@
 # Desafio Tahech Advogados :judge:
 
-- O desafio consumir os dados de uma api e aprensentá-los em uma página html, e complementando com alguns gráficos do portal da transparência.
-
 1. Clone o projeto em sua máquina.
 ```bash
    git clone <url do repositorio>
